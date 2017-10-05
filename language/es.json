@@ -1,0 +1,98 @@
+{
+    "SkipBackButtonText": "Atrás",
+    "SkipForwardButtonText": "Avanzar",
+    "PlayPauseButtonText": "Reproducir/Pausar",
+    "VolumeButtonText": "Volumen",
+    "SettingsButtonText": "Ajustes",
+    "ResumeVideoPlayback": "Reanudar la reproducción de vídeo",
+
+    "QualityMenuText": "Calidad",
+    "QualityAutoText": "Auto",
+    "LanguageMenuText": "Idioma",
+    "CCMenuText": "Subtítulos",
+    "BackFromText": "Back from",
+    "OnText": "On",
+    "OffText": "Off",
+
+    "ChapterIntroduction": "Introducción",
+    "Chapter1": "Su Cuenta",
+    "ChapterThanks": "Gracias",
+
+    "CtaButton1": "Botón 1",
+    "CtaButton2": "Botón 2",
+    "CtaButton3": "Botón 3",
+    "CtaButton4": "Botón 4",
+    "CtaButton5": "Botón 5",
+    "PromoTop": "Promo (Top)",
+    "PromoBottom": "Promo (Bottom)",
+
+    "SocialIcon-facebook": "Facebook",
+    "SocialIcon-twitter": "Twitter",
+    "SocialIcon-googleplus": "Google+",
+    "SocialIcon-email": "Email",
+    "SocialIcon-link": "Website",
+    "CollapseText": "Colapso",
+    "ExpandText": "Expandir",
+
+    "PreparedForText": "Preparado para",
+
+    "CopyrightText": "Copyright 2017 Client Name",
+    "PoweredByFooterText": "Powered by",
+    "HelpFooterText": "Ayuda",
+    "PrivacyPolicyFooterText": "Política de privacidad",
+
+    "PromoDesktopTopImagePath": "./images/promo_portrait.png",
+    "PromoDesktopBottomImagePath": "./images/promo_portrait.png",
+    "PromoMobileTopImagePath": "./images/promo_landscape.png",
+    "PromoMobileBottomImagePath": "./images/promo_landscape.png",
+    "CtaButtonsImagePath": "./images/cta_icons.png",
+
+    "PromoDesktopTopImagePathIE": "./images/promo_portrait_ie.png",
+    "PromoDesktopBottomImagePathIE": "./images/promo_portrait_ie.png",
+    "PromoMobileTopImagePathIE": "./images/promo_landscape.png",
+    "PromoMobileBottomImagePathIE": "./images/promo_landscape.png",
+    "CtaButtonsImagePathIE": "./images/cta_icons_ie.png",
+
+    "CtaButtonSettings": {
+        "button1": {
+            "card": "d1b4d742"
+        },
+        "button2": {
+            "card": "d1b4d742"
+        },
+        "button3": {
+            "card": "d1b4d742"
+        },
+        "button4": {
+            "card": "d1b4d742"
+        },
+        "button5": {
+            "url": "http://example.com/es"
+        }
+    },
+
+    "ChapterSettings": {
+        "introduction": [
+            {
+                "name": "introduction",
+                "cardId": "START"
+            }
+        ],
+        "youraccount": [
+            {
+                "name": "account-intro",
+                "cardId": "77a834f0"
+            },
+            {
+                "name": "account-type",
+                "cardId": "c23a68c9"
+            }
+        ],
+        "thanks": [
+            {
+                "name": "thanks",
+                "cardId": "7b0123a5"
+            }
+        ]
+    }
+}

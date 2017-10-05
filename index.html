@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<!--[if IE 7]><html class="ie ie7 lteie9 lteie8 lteie7" lang="en"><![endif]-->
+<!--[if IE 8]><html class="ie ie8 lteie9 lteie8" lang="en"><![endif]-->
+<!--[if IE 9]><html class="ie ie9 lteie9" lang="en"><![endif]-->
+<!--[if gt IE 9]><!-->
+<html lang="en">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Responsive Landing Page Template</title>
+
+    <meta name="description" content="...">
+    <meta property="og:url" content="..." />
+    <meta property="og:title" content="..." />
+    <meta property="og:description" content="..." />
+    <meta property="og:image" content="./images/og_image.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:type" content="video.other" />
+
+    <!-- Change this for non-english landing pages -->
+    <meta property="og:locale" content="en_US" />
+
+    <!-- Add a new meta tag for each language the landing page is offered in -->
+    <meta property="og:locale:alternate" content="en_GB" />
+    <meta property="og:locale:alternate" content="es_ES" />
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="...">
+    <meta name="twitter:description" content="...">
+    <meta name="twitter:image" content="./images/og_image.png">
+
+    <!-- Set this to the twitter username for the landing page (if it exists) eg. "@eov_landing_page" -->
+    <!-- <meta name="twitter:site" content="@username">-->
+
+    <link href="./css/reset.css" rel="stylesheet">
+    <link href="./css/structure.css" rel="stylesheet">
+    <link href="./css/presentation.css" rel="stylesheet">
+
+    <!-- IE 7/8 CSS overrides -->
+    <!--[if lte IE 8]><link href="./css/ie-overrides.css" rel="stylesheet"><![endif]-->
+
+    <link rel="canonical" href="..." />
+
+    <link rel="shortcut icon" href="./images/favicons/favicon.ico">
+    <link rel="shortcut icon" type="image/png" href="./images/favicons/favicon_16.png" sizes="16x16">
+    <link rel="shortcut icon" type="image/png" href="./images/favicons/favicon_32.png" sizes="32x32">
+    <link rel="shortcut icon" type="image/png" href="./images/favicons/favicon_57.png" sizes="57x57">
+    <link rel="shortcut icon" type="image/png" href="./images/favicons/favicon_72.png" sizes="72x72">
+    <link rel="shortcut icon" type="image/png" href="./images/favicons/favicon_96.png" sizes="96x96">
+    <link rel="shortcut icon" type="image/png" href="./images/favicons/favicon_114.png" sizes="114x114">
+    <link rel="shortcut icon" type="image/png" href="./images/favicons/favicon_120.png" sizes="120x120">
+    <link rel="shortcut icon" type="image/png" href="./images/favicons/favicon_128.png" sizes="128x128">
+    <link rel="shortcut icon" type="image/png" href="./images/favicons/favicon_144.png" sizes="144x144">
+    <link rel="shortcut icon" type="image/png" href="./images/favicons/favicon_152.png" sizes="152x152">
+    <link rel="shortcut icon" type="image/png" href="./images/favicons/favicon_195.png" sizes="195x195">
+    <link rel="shortcut icon" type="image/png" href="./images/favicons/favicon_228.png" sizes="228x228">
+
+    <!-- IE Mobile (Windows Phone) fix -->
+    <script>
+        (function() {
+            if ("-ms-user-select" in document.documentElement.style && navigator.userAgent.match(/IEMobile/)) {
+                var msViewportStyle = document.createElement("style");
+                msViewportStyle.appendChild(
+                    document.createTextNode("@-ms-viewport{width:auto!important}")
+                );
+                document.getElementsByTagName("head")[0].appendChild(msViewportStyle);
+            }
+        })();
+    </script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body class="body">
+    <div class="top-wrapper">
+        <header class="header">
+            <div class="social social--top social--expanded jsSocialIcons" id="jsSocialIconsTop">
+                <button class="social__icon social__icon--collapse" id="jsSocialIconTopCollapse" tabindex="5">
+                    <span class="sr-only translate" data-translate="CollapseText">Collapse</span>
+                </button>
+                <button class="social__icon social__icon--expand" id="jsSocialIconTopExpand" tabindex="5">
+                    <span class="sr-only translate" data-translate="ExpandText">Expand</span>
+                </button>
+            </div>
+
+            <br class="clearfix" />
+
+            <img class="header__logo" src="./images/nyar/yellow_sign.jpg" alt="Logo" />
+
+            <div class="header__text">
+                <div id="jsHeaderLowBandwidth" class="header__lowbandwidth"></div>
+                <div class="header__preparedfor">
+                    <span class="header__preparedfor--text" id="jsPreparedFor">&nbsp;</span>
+                    <span class="header__preparedfor--name" id="jsPreparedForName" data-dict-name="first_name"></span>
+                </div>
+            </div>
+        </header>
+
+        <main id="jsMain" class="main">
+            <div class="cta cta--side cta--5 jsCtaContainer">
+                <button type="button" data-button="button1" class="cta__button cta__button--button-1" tabindex="4">
+                    <div class="cta__icon cta__icon--contact jsCtaIcon"></div>
+                    <span class="translate" data-translate="CtaButton1">Contact</span>
+                </button>
+
+                <button type="button" data-button="button2" class="cta__button cta__button--button-2" tabindex="4">
+                    <div class="cta__icon cta__icon--website jsCtaIcon"></div>
+                    <span class="translate" data-translate="CtaButton2">Website</span>
+                </button>
+
+                <button type="button" data-button="button3" class="cta__button cta__button--button-3" tabindex="4">
+                    <div class="cta__icon cta__icon--email jsCtaIcon"></div>
+                    <span class="translate" data-translate="CtaButton3">Email</span>
+                </button>
+
+                <button type="button" data-button="button4" class="cta__button cta__button--button-4" tabindex="4">
+                    <div class="cta__icon cta__icon--save jsCtaIcon"></div>
+                    <span class="translate" data-translate="CtaButton4">Save</span>
+                </button>
+
+                <button type="button" data-button="button5" class="cta__button cta__button--button-5" tabindex="4">
+                    <div class="cta__icon cta__icon--share jsCtaIcon"></div>
+                    <span class="translate" data-translate="CtaButton5">Share</span>
+                </button>
+            </div>
+
+            <div class="player">
+                <div class="player__wrapper">
+                    <div class="player__iframe" id="jsPlayerIframe">
+
+           
+
+<!-- Keep video player larger than 320px and keep video player within the size of the viewport. 177.778vh is the aspect ratio 16/9: 100vh * (16/9). 54px is the height of the control bar (+ any extra required from the browser). -->
+<div style="min-width: 320px; width: 100%; max-width: calc(177.778vh - 54px); margin: 0 auto;">
+    <!-- maintain aspect ratio of video player. -->
+    <div style="position: relative; width: 100%; height: 0px; padding: 56.25% 0px 30px 0px;">
+        <iframe src="https://preprod.rtcvid.net/dk_demo_1/videoPlayer.php?uid=<uid>" frameborder="0" scrolling="no"
+        style="position: absolute; top: 0; right: 0; bottom: 0; left: 0; width: 100%; height: 100%; border: none;" allowfullscreen></iframe>
+    </div>
+</div>
+
+
+
+                        <div id="jsResumeSplash" class="player__splash">
+                            <div class="player__splash-image player__splash-image--white"></div>
+                            <span class="sr-only translate" data-translate="ResumeVideoPlayback">Resume Video Playback</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="promo promo--side jsPromoContainer">
+                <div class="promo__item promo__item--top">
+                    <a href="#" class="promo__link" data-promo="promo1" tabindex="4">
+                        <div id="jsPromoDesktopTop" class="promo__image">
+                            <span class="sr-only translate" data-translate="PromoTop">Promo (Top)</span>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="promo__item promo__item--bottom">
+                    <a href="#" class="promo__link" data-promo="promo2" tabindex="4">
+                        <div id="jsPromoDesktopBottom" class="promo__image">
+                            <span class="sr-only translate" data-translate="PromoBottom">Promo (Bottom)</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <br class="clearfix" />
+
+            <div id="jsTimeline" class="timeline">
+                <div id="jsTimelineCover" class="timeline__cover"></div>
+
+                <div id="jsSettingsContainer">
+                    <div id="jsSettingsButtonPopout" class="timeline__settings-popout jsSettingsPanel">
+                        <div class="timeline__settings-heading">
+                            <span class="translate" data-translate="SettingsButtonText">Settings</span>
+                        </div>
+
+                        <div id="jsQualityMenuItem" class="timeline__settings-item no-focus" data-setting="quality" tabindex="2">
+                            <div class="timeline__settings-icon timeline__settings-icon--left">
+                                <div id="jsQualityMenuIcon" class="timeline__button-icon timeline__button-icon--hd"></div>
+                            </div>
+                            <div class="timeline__settings-text">
+                                <span class="translate" data-translate="QualityMenuText">Quality</span>
+                            </div>
+                            <div class="timeline__settings-icon timeline__settings-icon--right timeline__settings-icon--small">
+                                <div class="timeline__button-icon timeline__button-icon--right-arrow"></div>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+
+                        <div id="jsLangMenuItem" class="timeline__settings-item no-focus" data-setting="language" tabindex="2">
+                            <div class="timeline__settings-icon timeline__settings-icon--left">
+                                <div class="timeline__button-icon timeline__button-icon--language"></div>
+                            </div>
+                            <div class="timeline__settings-text">
+                                <span class="translate" data-translate="LanguageMenuText">Language</span>
+                            </div>
+                            <div class="timeline__settings-icon timeline__settings-icon--right timeline__settings-icon--small">
+                                <div class="timeline__button-icon timeline__button-icon--right-arrow"></div>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+
+                        <div id="jsCCMenuItem" class="timeline__settings-item no-focus" data-setting="closed-captions" tabindex="2">
+                            <div class="timeline__settings-icon timeline__settings-icon--left">
+                                <div class="timeline__button-icon timeline__button-icon--cc"></div>
+                            </div>
+                            <div class="timeline__settings-text">
+                                <span class="translate" data-translate="CCMenuText">Captions</span>
+                            </div>
+                            <div class="timeline__settings-icon timeline__settings-icon--right timeline__settings-icon--small">
+                                <div class="timeline__button-icon timeline__button-icon--right-arrow"></div>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>
+
+                    <div id="jsLanguageSelectorPopout" class="timeline__settings-language jsSettingsPanel">
+                        <div id="jsLanguageMenuTitle" class="timeline__settings-heading timeline__settings-heading--clickable" tabindex="2">
+                            <div class="timeline__settings-icon timeline__settings-icon--left timeline__settings-icon--arrow">
+                                <div class="timeline__button-icon timeline__button-icon--left-arrow"></div>
+                                <span class="sr-only translate" data-translate="BackFromText">Back from</span>
+                            </div>
+                            <span class="translate" data-translate="LanguageMenuText">Language</span>
+                        </div>
+
+                        <div class="timeline__settings-item jsTimelineSettingsLanguage no-focus" data-language="en" tabindex="2">
+                            <div class="timeline__settings-text">English (EN)</div>
+                            <div class="timeline__settings-icon timeline__settings-icon--right">
+                                <div class="timeline__button-icon timeline__button-icon--tick jsSelectedLanguage"></div>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+                        <div class="timeline__settings-item jsTimelineSettingsLanguage no-focus" data-language="es" tabindex="2">
+                            <div class="timeline__settings-text">Espa&ntilde;ol (ES)</div>
+                            <div class="timeline__settings-icon timeline__settings-icon--right">
+                                <div class="timeline__button-icon timeline__button-icon--tick jsSelectedLanguage"></div>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>
+
+                    <div id="jsCCSelectorPopout" class="timeline__settings-cc jsSettingsPanel">
+                        <div id="jsCCMenuTitle" class="timeline__settings-heading timeline__settings-heading--clickable" tabindex="2">
+                            <div class="timeline__settings-icon timeline__settings-icon--left timeline__settings-icon--arrow">
+                                <div class="timeline__button-icon timeline__button-icon--left-arrow"></div>
+                                <span class="sr-only translate" data-translate="BackFromText">Back from</span>
+                            </div>
+                            <span class="translate" data-translate="CCMenuText">Captions</span>
+                        </div>
+
+                        <div id="jsCCOffButton" class="timeline__settings-item jsTimelineSettingsCaption no-focus" data-value="off" tabindex="2">
+                            <div class="timeline__settings-text translate" data-translate="OffText">Off</div>
+                            <div class="timeline__settings-icon timeline__settings-icon--right">
+                                <div id="jsCCOffTick" class="timeline__button-icon timeline__button-icon--tick"></div>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+                        <div id="jsCCOnButton" class="timeline__settings-item jsTimelineSettingsCaption no-focus" data-value="on" tabindex="2">
+                            <div class="timeline__settings-text translate" data-translate="OnText">On</div>
+                            <div class="timeline__settings-icon timeline__settings-icon--right">
+                                <div id="jsCCOnTick" class="timeline__button-icon timeline__button-icon--tick"></div>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>
+
+                    <div id="jsQualitySelectorPopout" class="timeline__settings-quality jsSettingsPanel">
+                        <div id="jsQualityMenuTitle" class="timeline__settings-heading timeline__settings-heading--clickable" tabindex="2">
+                            <div class="timeline__settings-icon timeline__settings-icon--left timeline__settings-icon--arrow">
+                                <div class="timeline__button-icon timeline__button-icon--left-arrow"></div>
+                                <span class="sr-only translate" data-translate="BackFromText">Back from</span>
+                            </div>
+                            <span class="translate" data-translate="QualityMenuText">Quality</span>
+                        </div>
+
+                        <div class="timeline__settings-item jsTimelineSettingsQuality no-focus" data-quality="auto" tabindex="2">
+                            <div class="timeline__settings-icon timeline__settings-icon--left timeline__settings-icon--small">
+                                <div id="jsQualityMenuAutoIcon" class="timeline__button-icon timeline__button-icon--hd"></div>
+                            </div>
+                            <div class="timeline__settings-text translate" data-translate="QualityAutoText">Auto</div>
+                            <div class="timeline__settings-icon timeline__settings-icon--right">
+                                <div id="jsQualityAutoTick" class="timeline__button-icon timeline__button-icon--tick"></div>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+                        <div class="timeline__settings-item jsTimelineSettingsQuality no-focus" data-quality="1080p" tabindex="2">
+                            <div class="timeline__settings-icon timeline__settings-icon--left timeline__settings-icon--small">
+                                <div class="timeline__button-icon timeline__button-icon--hd"></div>
+                            </div>
+                            <div class="timeline__settings-text">1080p</div>
+                            <div class="timeline__settings-icon timeline__settings-icon--right">
+                                <div id="jsQuality1080pTick" class="timeline__button-icon timeline__button-icon--tick"></div>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+                        <div class="timeline__settings-item jsTimelineSettingsQuality no-focus" data-quality="720p" tabindex="2">
+                            <div class="timeline__settings-icon timeline__settings-icon--left timeline__settings-icon--small">
+                                <div class="timeline__button-icon timeline__button-icon--hd"></div>
+                            </div>
+                            <div class="timeline__settings-text">720p</div>
+                            <div class="timeline__settings-icon timeline__settings-icon--right">
+                                <div id="jsQuality720pTick" class="timeline__button-icon timeline__button-icon--tick"></div>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+                        <div class="timeline__settings-item jsTimelineSettingsQuality no-focus" data-quality="540p" tabindex="2">
+                            <div class="timeline__settings-icon timeline__settings-icon--left timeline__settings-icon--small">
+                                <div class="timeline__button-icon timeline__button-icon--sd"></div>
+                            </div>
+                            <div class="timeline__settings-text">540p</div>
+                            <div class="timeline__settings-icon timeline__settings-icon--right">
+                                <div id="jsQuality540pTick" class="timeline__button-icon timeline__button-icon--tick"></div>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+                        <div class="timeline__settings-item jsTimelineSettingsQuality no-focus" data-quality="360p" tabindex="2">
+                            <div class="timeline__settings-icon timeline__settings-icon--left timeline__settings-icon--small">
+                                <div class="timeline__button-icon timeline__button-icon--sd"></div>
+                            </div>
+                            <div class="timeline__settings-text">360p</div>
+                            <div class="timeline__settings-icon timeline__settings-icon--right">
+                                <div id="jsQuality360pTick" class="timeline__button-icon timeline__button-icon--tick"></div>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline__controls timeline__controls--left">
+                    <button id="jsSkipBackButton" type="button" class="jsTimelineButton timeline__button timeline__button--skip-back no-focus" tabindex="-1">
+                        <span class="timeline__button-icon timeline__button-icon--skip-back"></span>
+                        <span class="sr-only translate" data-translate="SkipBackButtonText">Skip back</span>
+                    </button>
+                    <button id="jsPlayPauseButton" type="button" class="jsTimelineButton timeline__button timeline__button--play-pause no-focus" tabindex="-1">
+                        <span class="timeline__button-icon timeline__button-icon--play"></span>
+                        <span id="jsPlayPauseSRText" class="sr-only translate" data-translate="PlayPauseButtonText">Play/Pause</span>
+                    </button>
+                    <button id="jsSkipForwardButton" type="button" class="jsTimelineButton timeline__button timeline__button--skip-forward no-focus" tabindex="-1">
+                        <span class="timeline__button-icon timeline__button-icon--skip-forward"></span>
+                        <span class="sr-only translate" data-translate="SkipForwardButtonText">Skip forward</span>
+                    </button>
+                </div>
+
+                <div class="timeline__controls timeline__controls--active-state">
+                    <div id="jsTimelineMobileActiveState" class="timeline-active-state__label"></div>
+                </div>
+
+                <div id="jsTimelineControlsCenter" class="timeline__controls timeline__controls--center">
+
+                    <div id="jsBufferTimeline" class="timeline-buffering"></div>
+
+                    <div id="jsTimelineProgressHover" class="timeline-progress-hover"></div>
+
+                    <div id="jsTimelineIndicator" class="timeline-progress-indicator">
+                        <div id="jsTimelineIndicatorBall" class="timeline-progress-indicator-ball"></div>
+                    </div>
+
+                    <div id="jsTimelineProgress" class="timeline-progress"></div>
+
+                    <div id="jsTimelineContainer" class="timeline-chapters">
+                        <div class="timeline-chapters__chapter timeline-chapters__chapter-introduction">
+                            <div class="timeline-chapters__state jsTimelineState" data-percent-width="20" data-percent-start="0" data-state="introduction"></div>
+                            <span class="jsTimelineChapterLabel timeline-chapters__label translate" data-translate="ChapterIntroduction">Introduction</span>
+                        </div>
+                        <div class="timeline-chapters__chapter timeline-chapters__chapter-youraccount">
+                            <div class="timeline-chapters__state jsTimelineState" data-percent-width="25" data-percent-start="25" data-state="account-intro"></div>
+                            <div class="timeline-chapters__state jsTimelineState" data-percent-width="25" data-percent-start="25" data-state="account-type"></div>
+                            <span class="jsTimelineChapterLabel timeline-chapters__label translate" data-translate="Chapter1">Your Account</span>
+                        </div>
+                         <div class="timeline-chapters__chapter timeline-chapters__chapter-yourdetails">
+                            <div class="timeline-chapters__state jsTimelineState" data-percent-width="20" data-percent-start="30" data-state="account-intro"></div>
+                            <div class="timeline-chapters__state jsTimelineState" data-percent-width="20" data-percent-start="40" data-state="account-type"></div>
+                            <span class="jsTimelineChapterLabel timeline-chapters__label translate" data-translate="Chapter2">Your details</span>
+                        </div>
+                        <div class="timeline-chapters__chapter timeline-chapters__chapter-thanks">
+                            <div class="timeline-chapters__state jsTimelineState" data-percent-width="40" data-percent-start="70" data-state="thanks"></div>
+                            <span class="jsTimelineChapterLabel timeline-chapters__label translate" data-translate="ChapterThanks">Thanks</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="jsTimelineControlsRight" class="timeline__controls timeline__controls--right">
+                    <button id="jsSettingsButton" type="button" class="jsTimelineButton timeline__button timeline__button--settings no-focus" tabindex="-1">
+                        <span id="jsSettingsButtonIcon" class="timeline__button-icon timeline__button-icon--settings"></span>
+                        <span class="sr-only translate" data-translate="SettingsButtonText">Settings</span>
+                    </button>
+
+                    <button id="jsVolumeButton" type="button" class="jsTimelineButton timeline__button timeline__button--volume no-focus" tabindex="-1">
+                        <span id="jsVolumeButtonIcon" class="timeline__button-icon timeline__button-icon--volume-2"></span>
+                        <span class="sr-only translate" data-translate="VolumeButtonText">Volume</span>
+                    </button>
+
+                    <div class="timeline-volume">
+                        <div id="jsVolumeBar" class="timeline-volume__bg"></div>
+                        <div id="jsVolumeLevel" class="timeline-volume__level">
+                            <div id="jsVolumeBall" class="timeline-volume__ball"></div>
+                            <span id="jsVolumeButtonSRText" class="sr-only translate" data-translate="VolumeButtonText">Volume</span>
+                        </div>
+                    </div>
+
+                    <button id="jsFullScreenButton" type="button" class="jsTimelineButton timeline__button timeline__button--fullscreen no-focus" tabindex="-1">
+                        <span class="timeline__button-icon timeline__button-icon--fullscreen"></span>
+                        <span class="sr-only translate" data-translate="FullScreenButtonText">Full Screen</span>
+                    </button>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <div class="bottom-wrapper">
+        <div class="clearfix"></div>
+
+        <div class="cta cta--bottom cta--5 jsCtaContainer">
+            <button type="button" data-button="button1" class="cta__button cta__button--button-1" tabindex="4">
+                <div class="cta__icon cta__icon--contact jsCtaIcon"></div>
+                <span class="translate" data-translate="CtaButton1">Contact</span>
+            </button>
+
+            <button type="button" data-button="button2" class="cta__button cta__button--button-2" tabindex="4">
+                <div class="cta__icon cta__icon--website jsCtaIcon"></div>
+                <span class="translate" data-translate="CtaButton2">Website</span>
+            </button>
+
+            <button type="button" data-button="button3" class="cta__button cta__button--button-3" tabindex="4">
+                <div class="cta__icon cta__icon--email jsCtaIcon"></div>
+                <span class="translate" data-translate="CtaButton3">Email</span>
+            </button>
+
+            <button type="button" data-button="button4" class="cta__button cta__button--button-4" tabindex="4">
+                <div class="cta__icon cta__icon--save jsCtaIcon"></div>
+                <span class="translate" data-translate="CtaButton4">Save</span>
+            </button>
+
+            <button type="button" data-button="button5" class="cta__button cta__button--button-5" tabindex="4">
+                <div class="cta__icon cta__icon--share jsCtaIcon"></div>
+                <span class="translate" data-translate="CtaButton5">Share</span>
+            </button>
+
+            <br class="clearfix" />
+        </div>
+
+        <div class="social social--bottom jsSocialIcons" id="jsSocialIconsBottom"></div>
+
+        <div class="promo promo--bottom jsPromoContainer">
+            <div class="promo__item promo__item--top">
+                <a href="#" class="promo__link" data-promo="promo1" tabindex="4">
+                    <div id="jsPromoMobileTop" class="promo__image">
+                        <span class="sr-only translate" data-translate="PromoTop">Promo (Top)</span>
+                    </div>
+                </a>
+            </div>
+
+            <div class="promo__item promo__item--bottom">
+                <a href="#" class="promo__link" data-promo="promo2" tabindex="4">
+                    <div id="jsPromoMobileBottom" class="promo__image">
+                        <span class="sr-only translate" data-translate="PromoBottom">Promo (Bottom)</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <div class="footer__poweredby">
+                <a class="footer__link footer__link--image" href="http://www.pitneybowes.com/" target="_blank" tabindex="6">
+                    <img class="footer__pblogo" src="./images/pb_logo.png" alt="Pitney Bowes" />
+                </a>
+
+                <br class="footer__poweredby-break" />
+
+                <a class="footer__link" href="http://www.pitneybowes.com/us/customer-engagement-marketing/synchronized-communications-execution/engageone-video-personalized-video.html" target="_blank" tabindex="6">
+                    <span class="translate" data-translate="PoweredByFooterText">Powered by</span> Pitney Bowes
+                    <strong>EngageOne&reg; Video</strong>
+                </a>
+            </div>
+
+            <div class="footer__copyright">
+                &copy; <span class="translate" data-translate="CopyrightText">Copyright 2017 Client Name</span>
+            </div>
+
+            <div class="footer__links">
+                <a href="#" class="footer__link translate" data-translate="HelpFooterText" target="_blank" tabindex="6">Help</a> |
+                <a href="#" class="footer__link translate" data-translate="PrivacyPolicyFooterText" target="_blank" tabindex="6">Privacy Policy</a>
+            </div>
+        </footer>
+    </div>
+
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script src="js/settings.js"></script>
+    <script src="js/script.js"></script>
+
+    <!--
+        Uncomment the section below and update the "gaTrackingCode" variable to enable google analytics.
+        If you're using a different analytics provider or do not require analytics you can remove this section.
+    -->
+    <!-- <script>
+        var gaTrackingCode = "";
+
+        (function(i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function() {
+                    (i[r].q = i[r].q || []).push(arguments)
+                }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', gaTrackingCode, 'auto');
+        ga('send', 'pageview');
+    </script> -->
+</body>
+</html>
